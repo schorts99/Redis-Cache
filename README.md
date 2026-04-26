@@ -1,6 +1,6 @@
 # Redis Cache
 
-A Redis-backed cache implementation for Node.js that conforms to the Cache<T> interface from @schorts/shared-kernel. It provides TTL support, tag-based invalidation, and simple JSON serialization.
+A Redis-backed cache implementation for Node.js that conforms to the Cache<T> interface from [`@schorts/shared-kernel`](https://www.npmjs.com/package/@schorts/shared-kernel). It provides TTL support, tag-based invalidation, and simple JSON serialization.
 
 ## Features
 
