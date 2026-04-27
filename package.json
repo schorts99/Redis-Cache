@@ -1,6 +1,6 @@
 {
   "name": "@schorts/redis-cache",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.2",
   "description": "A Redis-backed cache implementation for Node.js that conforms to the Cache<T> interface from @schorts/shared-kernel. It provides TTL support, tag-based invalidation, and simple JSON serialization.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",

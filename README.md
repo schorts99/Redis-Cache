@@ -19,10 +19,13 @@ npm install @schorts/redis-cache
 ## Usage
 
 ```ts
-import { RedisCache } from "@schorts/redis-cache";
+import { RedisCache, Redis } from "@schorts/redis-cache";
+
+// Initialize Redis
+const redis = new RedisCache("redis://localhost:6379")
 
 // Initialize with Redis connection URL
-const cache = new RedisCache("redis://localhost:6379", "myapp");
+const cache = new RedisCache(redis, "myapp");
 
 // Store an object with TTL and tags
 await cache.set("user:123", { id: 123, name: "Alice" }, 60000, ["user", "tenant:456"]);

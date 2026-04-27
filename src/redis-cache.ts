@@ -5,8 +5,8 @@ export class RedisCache<T = unknown> implements SharedCache<T> {
   private readonly client: Redis;
   private readonly prefix: string;
 
-  constructor(redisUrl: string, prefix: string) {
-    this.client = new Redis(redisUrl);
+  constructor(redis: Redis, prefix: string) {
+    this.client = redis;
     this.prefix = prefix;
   }
 
